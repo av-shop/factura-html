@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFIP invoice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="invoice">
+        <section id="first-section">
+
+
+            <div id="fs-first">
+                <h1>Original</h1>
+            </div>
+
+            <div id="fs-second">
+                <div class="main-information">
+                    <div id="issuer-information">
+                        <h2 id="social-denomination">Denominación social del emisor</h2>
+
+                        <p class="item">Razón social:<span class="data uppercase-data spacer">Espantoso Lucas
+                                Eduardo</span>
+                        </p>
+                        <p class="item">Domicilio comercial:<span class="data spacer">Dirección Fiscal 1234 - Ciudad de
+                                Buenos Aires</span></p>
+                        <p class="item">Condición frente al IVA:<span class="spacer">Responsable Monotributo</span></p>
+                    </div>
+                </div>
+
+
+
+                <div id="invoice-type-box">
+                    <h2 id="invoice-type-letter">C</h2>
+                    <span id="invoice-type-cod">COD. 011</span>
+                </div>
+                <div class="horizontal-line"></div>
+
+
+
+                <div class="main-information">
+                    <div id="invoice-data">
+                        <h2 class="common-title">Factura</h2>
+
+                        <div class="inline-items invoice-numbers">
+                            <p>Punto de Venta:<span class="spacer">0005</span></p>
+                            <p class="inline-item">Comp. Nro:<span class="spacer">00001581</span></p>
+                        </div>
+
+                        <p class="item date">Fecha de Emisión:<span class="spacer">29/12/2022</span></p>
+
+                        <div id="issuer-invoice-data">
+
+                            <p class="invoice-data-item">CUIT:<span
+                                    class="data uppercase-data spacer">20326595621</span>
+                            </p>
+                            <p class="invoice-data-item">Ingresos Brutos:<span class="data uppercase-data spacer">IIBB
+                                    CM
+                                    20326521254</span></p>
+                            <p class="invoice-data-item">Fecha de Inicio de Actividades:<span
+                                    class="data uppercase-data spacer">29/12/2022</span></p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="billing-dates">
+                <div class="first-data-container">
+                    <p>Período Facturado Desde:<span class="data spacer">01/12/2022</span></p>
+                </div>
+
+                <div class="second-data-container">
+                    <div>
+                        <p>Hasta:<span class="data spacer">31/12/2022</span></p>
+                    </div>
+
+                    <div>
+                        <p>Fecha de Vto. para el pago:<span class="data spacer">05/01/2023</span></p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <section>
+            <div id="second-section">
+                <div id="ss-first">
+                    <p class="recipient-item">CUIT:<span class="data spacer">30254122351</span></p>
+                    <p class="recipient-item">Condicón frente al IVA:<span class="data spacer">IVA Sujeto Exento</span>
+                    </p>
+                    <p class="recipient-item">Condición de venta:<span class="data spacer">Contado</span></p>
+
+                </div>
+
+
+                <div id="ss-second">
+
+                    <p class="recipient-item">Apellido y Nombre / Razón Social:<span
+                            class="data uppercase-data spacer">CONSEJO
+                            DE LA MAGISTRATURA DE LA CIUDAD AUTONOMA DE BUENOS A</span></p>
+                    <p class="recipient-item">Domicilio:<span class="data spacer">Roca Julio A.Pte.Av. 516 - Capital
+                            Federal,
+                            Ciudad de Buenos Aires</span></p>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="third-section">
+            <table>
+                <tr id="table-header">
+                    <th class="t-code">Código</th>
+                    <th class="t-article">Producto / Servicio</th>
+                    <th class="t-quantity">Cantidad</th>
+                    <th class="t-extent">U. Medida</th>
+                    <th class="t-price">Precio Unit.</th>
+                    <th class="t-discount">% Bonif</th>
+                    <th class="t-subsidized">Imp. Bonif.</th>
+                    <th class="t-subtotal">Subtotal</th>
+                </tr>
+                <tr>
+                    <td class="t-code"><span class="data"></span></td>
+                    <td class="t-article"><span class="data">Honorarios</span></td>
+                    <td class="t-quantity numerical-data"><span class="data">1,00</span></td>
+                    <td class="t-extent"><span class="data units">unidades</span></td>
+                    <td class="t-price numerical-data"><span class="data">3476,00</span></td>
+                    <td class="t-discount numerical-data"><span class="data">0,00</span></td>
+                    <td class="t-subsidized numerical-data"><span class="data">0,00</span></td>
+                    <td class="t-subtotal numerical-data"><span class="data">3476,00</span></td>
+                </tr>
+
+
+                <tr>
+                    <td class="t-code"><span class="data"></span></td>
+                    <td class="t-article"><span class="data">Honorarios del emisor relleno relleno2</span></td>
+                    <td class="t-quantity numerical-data"><span class="data">1,00</span></td>
+                    <td class="t-extent"><span class="data units">unidades</span></td>
+                    <td class="t-price numerical-data"><span class="data">150.476,00</span></td>
+                    <td class="t-discount numerical-data"><span class="data">0,00</span></td>
+                    <td class="t-subsidized numerical-data"><span class="data">0,00</span></td>
+                    <td class="t-subtotal numerical-data"><span class="data">150.476,00</span></td>
+                </tr>
+
+            </table>
+        </section>
+
+
+
+        <section id="fourth-section">
+            <div id="accounting-containter">
+
+                <div class="accounting-subcontainter">
+                    <p class="accounting-item">Subtotal:</p>
+                    <p class="accounting-item">Importe Otros Tributos:</p>
+                    <p class="accounting-item total">Importe Total:</p>
+                </div>
+
+                <div class="accounting-subcontainter">
+                    <span class="spacer accounting-number">153.952,00</span>
+                    <span class="spacer accounting-number">0,00</span>
+                    <span class="spacer accounting-number">153.952,00</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="fifth-section">
+
+            <div id="qr-code">
+                <img src="assets/qr.png" alt="QR code" width="110" height="110">
+            </div>
+
+
+            <div id="afip-info">
+
+                <div id="logo">
+                    <img src="assets/logo.png" alt="QR code" width="130" height="38">
+                </div>
+
+                <div id="legends">
+
+                    <p id="authorized-voucher">Comprobante Autorizado</p>
+                    <p id="disclaimer">Esta Administración Federal no se responsabiliza por los datos ingresados en el
+                        detalle de la operación</p>
+                </div>
+
+            </div>
+
+            <div id="page">
+                <p>Pág. 1/1</p>
+            </div>
+
+            <div id="authorization-code">
+                <p class="authorization-item">CAE N°:<span class="data spacer">72521110525158</span></p>
+                <p class="authorization-item">Fecha de Vto. de CAE:<span class="data spacer">02/09/2023</span></p>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>

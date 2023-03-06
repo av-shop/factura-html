@@ -1,0 +1,377 @@
+@font-face {
+    font-family: Arial-Nova-Bold;
+    src: url(Arial-Nova-Bold.ttf);
+}
+
+@font-face {
+    font-family: yudit;
+    src: url(yudit.ttf);
+}
+
+* {
+    font-family: Arial-Nova-Bold;
+}
+
+#invoice {
+    background: white;
+    width: 800px;
+    margin: auto;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    margin: 8px;
+}
+
+section {
+    border: 1.6px solid;
+    min-height: 100px;
+    margin: 1px;
+    width: 100%;
+}
+
+#first-section {
+    min-height: 250px;
+}
+
+
+#fs-first {
+    text-align: center;
+    border-bottom: 1.6px solid;
+}
+
+#fs-second {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    min-height: 180px;
+    border-bottom: 1px solid;
+}
+
+#invoice-type-box {
+    border: 1.6px solid;
+    width: 60px;
+    height: 55px;
+    text-align: center;
+    background: white;
+    z-index: 2;
+}
+
+#invoice-type-letter {
+    text-align: center;
+    font-size: 2em;
+    margin: 0px;
+    margin-top: 7px;
+    padding: 0;
+    line-height: 0.8;
+}
+
+.main-information {
+    width: 50%;
+}
+
+#invoice-type-cod {
+    font-size: 0.65em;
+}
+
+#social-denomination {
+    text-align: center;
+}
+
+.horizontal-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: #000;
+    height: 100%;
+    width: 1px;
+    z-index: 0;
+}
+
+#invoice-data {
+    margin: 0 20px;
+}
+
+
+#issuer-information {
+    margin: 0 8px;
+}
+
+.item {
+    font-size: 13px;
+    line-height: 1;
+    margin: 19px 0;
+}
+
+.item:last-child {
+    margin-bottom: 3px;
+}
+
+.common-title {
+    margin: 8px 0 0 0;
+}
+
+.data {
+    font-family: yudit;
+}
+
+.uppercase-data {
+    text-transform: uppercase;
+}
+
+.inline-items {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.invoice-numbers {
+    height: 25px;
+}
+
+.inline-item {
+    margin-left: 25px;
+}
+
+.spacer {
+    margin-left: 8px;
+}
+
+
+.date {
+    margin: 0;
+    margin-top: 8px;
+}
+
+#issuer-invoice-data {
+    margin-top: 20px;
+}
+
+.invoice-data-item {
+    font-size: 13px;
+    line-height: 1;
+    margin: 3px 0;
+}
+
+#billing-dates {
+    height: 30px;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 15px;
+    line-height: 1;
+    margin: 0 8px;
+    align-items: center;
+}
+
+.first-data-container {
+    width: 35%;
+}
+
+.second-data-container {
+    width: 65%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#second-section {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.recipient-item {
+    font-size: 12px;
+    line-height: 1;
+    margin: 0 0 10px 10px;
+}
+
+#ss-first {
+    width: 35%;
+}
+
+#ss-second {
+    width: 65%;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1px 0;
+    font-size: 12px;
+    width: 100.3%;
+}
+
+#table-header {
+    background: #cdcdcd;
+}
+
+th {
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 11px;
+    min-width: 40px;
+}
+
+th {
+    padding: 3px;
+    height: 18px;
+}
+
+td {
+    padding: 0 3px;
+    line-height: 1;
+    height: 27px;
+}
+
+#third-section {
+    border: none;
+    min-height: 400px;
+}
+
+.t-code {
+    text-align: left;
+    width: 5%;
+}
+
+.t-article {
+    width: 25%;
+    text-align: left;
+}
+
+.t-quantity {
+    width: 15%;
+}
+
+.t-extent {
+    width: 5%;
+}
+
+.t-price {
+    width: 15%;
+}
+
+.t-discount {
+    width: 5%;
+}
+
+.t-subsidized {
+    width: 13%;
+}
+
+.t-subtotal {
+    width: 17%;
+}
+
+.numerical-data {
+    text-align: right;
+}
+
+.units {
+    font-size: 10px;
+    padding: 0 8px;
+}
+
+#fourth-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 125px;
+}
+
+#accounting-containter {
+    min-width: 280px;
+    margin: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accounting-subcontainter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 13px;
+}
+
+.accounting-item,
+.accounting-number {
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.accounting-item:after {
+    content: "$";
+    margin-left: 3px;
+}
+
+.total {
+    font-size: 14px;
+}
+
+#fifth-section {
+    border: none;
+    position: relative;
+    display: inline-flex;
+    align-items: flex-start;
+}
+
+#qr-code {
+    margin-top: 22px;
+    margin-left: 17px;
+}
+
+#afip-info {
+    margin-left: 30px;
+    margin-top: 29px;
+}
+
+#logo {
+    margin-left: 6px;
+    margin-bottom: 5px;
+    margin-top: 1px;
+}
+
+
+#legends {
+    font-family: 'Arial-Nova-Bold';
+    font-style: italic;
+}
+
+#authorized-voucher {
+    margin-top: 7px;
+    font-size: 13.5px;
+}
+
+#disclaimer {
+    font-size: 9.2px;
+}
+
+#page {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+
+#authorization-code {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 30px;
+    top: 4px;
+}
+
+.authorization-item {
+    margin: 2px;
+    width: max-content;
+}
